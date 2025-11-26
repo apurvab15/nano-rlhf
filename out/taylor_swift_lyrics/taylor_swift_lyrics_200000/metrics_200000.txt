@@ -1,0 +1,7 @@
+
+===== Evaluation Metrics =====
+KL Divergence (3-gram): 3.904912
+Distinct-1: 0.0115
+Distinct-2: 0.0814
+==============================
+

@@ -1,0 +1,125 @@
+LEXICAL DIVERSITY REWARD ANALYSIS
+================================================================================
+
+HIGH-REWARD SAMPLES:
+
+Sample 1 - Reward: 0.9207
+Prompt: 'The ' | Temperature: 1.2
+The ways shall night up.
+
+DUKE VINCENTIO:
+He will believe there, Carus, not my name;
+This needle univites willingly leaving
+Win cold grovers;
+Whether you 
+
+--------------------------------------------------------------------------------
+
+Sample 2 - Reward: 0.9097
+Prompt: 'The ' | Temperature: 1.0
+The promise of all the pitch
+Of time here watch'd with the blood-scent, the bricks
+With lip his worth at the advantage clouds,
+The Dick of York clouding c
+
+--------------------------------------------------------------------------------
+
+Sample 3 - Reward: 0.9080
+Prompt: 'First Citizen:' | Temperature: 1.2
+First Citizen:
+Just for all neck, for one nightless affections
+And lap of their sword.
+
+Second Citizen:
+'tiS already enough.
+
+First Citizens:
+This gelden way
+Well e
+
+--------------------------------------------------------------------------------
+
+Sample 4 - Reward: 0.9076
+Prompt: 'KING:' | Temperature: 1.0
+KING:
+Then, that is gone to the world.
+
+KING HENRY VI:
+Be Earl of William I' spring from this deed.
+
+WARWICK:
+Brother, good cousin, that came to use him cl
+
+--------------------------------------------------------------------------------
+
+Sample 5 - Reward: 0.9033
+Prompt: 'ROMEO:' | Temperature: 1.2
+ROMEO:
+Now, well; wert thou couldst have you wouldsul.
+
+TYBALT:
+that Warwick,
+What, return, you may live for her husband;
+This hungry and that I will, vain 
+
+--------------------------------------------------------------------------------
+
+
+
+LOW-REWARD SAMPLES:
+
+Sample 1 - Reward: 0.8764
+Prompt: 'JULIET:' | Temperature: 1.0
+JULIET:
+Bade peaces unto the duke! Is this son?
+O younger ransom, then, will not bring forth in
+Our seeming ping narrow to his natural fellow?
+What, is here?
+
+--------------------------------------------------------------------------------
+
+Sample 2 - Reward: 0.8738
+Prompt: 'ROMEO:' | Temperature: 0.8
+ROMEO:
+A guilt, a word of love, that art thou or warrant,
+To sue and take thy point.
+
+MERCUTIO:
+Stay, by what like a contract of large?
+
+BENVOLIO:
+Yes, my l
+
+--------------------------------------------------------------------------------
+
+Sample 3 - Reward: 0.8717
+Prompt: 'First Citizen:' | Temperature: 1.0
+First Citizen:
+Had he been country! Come, let's to woo;
+Our threes that they do took again with brow
+Destroy with her, and will none on our commonwealth
+And now you
+
+--------------------------------------------------------------------------------
+
+Sample 4 - Reward: 0.8672
+Prompt: 'The ' | Temperature: 0.5
+The Tower:
+A beggar, a well-a-deed, a poor and thee
+As thou art a party to the man;
+So many lords are they stand them all;
+For they have purchase their si
+
+--------------------------------------------------------------------------------
+
+Sample 5 - Reward: 0.8544
+Prompt: 'JULIET:' | Temperature: 0.5
+JULIET:
+And in the devil seal
+Of the wind of this true week of death,
+And seek the breath of the state of heaven,
+And sparks the rest and fair land of fear.
+
+
+--------------------------------------------------------------------------------
+

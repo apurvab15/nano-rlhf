@@ -1,0 +1,64 @@
+=== Starting run for dataset size 446319 ===
+Timestamp: Tue Oct 21 09:08:59 PM CDT 2025
+----------------------------------------------
+>>> Training...
+tokens per iteration will be: 1,024
+/afs/cs.wisc.edu/u/a/p/apurvaashok/foundational_model/nanoGPT/nanoGPT_venv/lib/python3.10/site-packages/torch/backends/__init__.py:46: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
+  self.setter(val)
+found vocab_size = 82 (inside data/taylor_swift_lyrics_446319/meta.pkl)
+Initializing a new model from scratch
+number of parameters: 10.65M
+/afs/cs.wisc.edu/u/a/p/apurvaashok/foundational_model/nanoGPT/train.py:196: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=(dtype == 'float16'))
+num decayed parameter tensors: 26, with 10,697,472 parameters
+num non-decayed parameter tensors: 13, with 4,992 parameters
+using fused AdamW: True
+compiling the model... (takes a ~minute)
+/afs/cs.wisc.edu/u/a/p/apurvaashok/foundational_model/nanoGPT/nanoGPT_venv/lib/python3.10/site-packages/torch/_inductor/compile_fx.py:2772: UserWarning: NVIDIA GeForce RTX 2080 Ti does not support bfloat16 compilation natively, skipping
+  warnings.warn(
+step 0: train loss 4.4829, val loss 4.4828
+/afs/cs.wisc.edu/u/a/p/apurvaashok/foundational_model/nanoGPT/nanoGPT_venv/lib/python3.10/site-packages/torch/_inductor/compile_fx.py:2772: UserWarning: NVIDIA GeForce RTX 2080 Ti does not support bfloat16 compilation natively, skipping
+  warnings.warn(
+/afs/cs.wisc.edu/u/a/p/apurvaashok/foundational_model/nanoGPT/nanoGPT_venv/lib/python3.10/site-packages/torch/_inductor/compile_fx.py:2772: UserWarning: NVIDIA GeForce RTX 2080 Ti does not support bfloat16 compilation natively, skipping
+  warnings.warn(
+/afs/cs.wisc.edu/u/a/p/apurvaashok/foundational_model/nanoGPT/nanoGPT_venv/lib/python3.10/site-packages/torch/_inductor/compile_fx.py:2772: UserWarning: NVIDIA GeForce RTX 2080 Ti does not support bfloat16 compilation natively, skipping
+  warnings.warn(
+iter 0: loss 4.5119, time 13768.19ms, mfu -100.00%
+step 250: train loss 2.1847, val loss 2.1954
+saving checkpoint to out/taylor_swift_lyrics/taylor_swift_lyrics_446319
+iter 250: loss 2.1380, time 32860.13ms, mfu 0.00%
+step 500: train loss 1.8438, val loss 1.8591
+saving checkpoint to out/taylor_swift_lyrics/taylor_swift_lyrics_446319
+iter 500: loss 1.9903, time 35940.73ms, mfu 0.00%
+step 750: train loss 1.6759, val loss 1.6992
+saving checkpoint to out/taylor_swift_lyrics/taylor_swift_lyrics_446319
+iter 750: loss 1.7504, time 31334.12ms, mfu 0.00%
+step 1000: train loss 1.5830, val loss 1.6177
+saving checkpoint to out/taylor_swift_lyrics/taylor_swift_lyrics_446319
+iter 1000: loss 1.5937, time 32761.10ms, mfu 0.00%
+step 1250: train loss 1.5023, val loss 1.5535
+saving checkpoint to out/taylor_swift_lyrics/taylor_swift_lyrics_446319
+iter 1250: loss 1.6439, time 30512.44ms, mfu 0.00%
+step 1500: train loss 1.4482, val loss 1.5184
+saving checkpoint to out/taylor_swift_lyrics/taylor_swift_lyrics_446319
+iter 1500: loss 1.5869, time 30496.69ms, mfu 0.00%
+step 1750: train loss 1.4074, val loss 1.5073
+saving checkpoint to out/taylor_swift_lyrics/taylor_swift_lyrics_446319
+iter 1750: loss 1.5176, time 34481.17ms, mfu 0.00%
+step 2000: train loss 1.3927, val loss 1.4788
+saving checkpoint to out/taylor_swift_lyrics/taylor_swift_lyrics_446319
+iter 2000: loss 1.4921, time 32934.14ms, mfu 0.00%
+>>> Generating samples...
+/afs/cs.wisc.edu/u/a/p/apurvaashok/foundational_model/nanoGPT/nanoGPT_venv/lib/python3.10/site-packages/torch/backends/__init__.py:46: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
+  self.setter(val)
+>>> Evaluating metrics...
+
+===== Evaluation Metrics =====
+KL Divergence (3-gram): 3.728300
+Distinct-1: 0.0115
+Distinct-2: 0.0772
+==============================
+
+Completed run for dataset size: 446319
+Timestamp: Tue Oct 21 09:15:35 PM CDT 2025
+==============================================

@@ -1,0 +1,38 @@
+=== Starting run for dataset size 446319 ===
+Timestamp: Tue Oct 21 11:31:03 PM CDT 2025
+----------------------------------------------
+>>> Training...
+tokens per iteration will be: 1,024
+Traceback (most recent call last):
+  File "/afs/cs.wisc.edu/u/a/p/apurvaashok/foundational_model/nanoGPT/train.py", line 105, in <module>
+    os.makedirs(out_dir, exist_ok=True)
+  File "/usr/lib/python3.10/os.py", line 225, in makedirs
+    mkdir(name, mode)
+FileNotFoundError: [Errno 2] No such file or directory: ''
+>>> Generating samples...
+/afs/cs.wisc.edu/u/a/p/apurvaashok/foundational_model/nanoGPT/nanoGPT_venv/lib/python3.10/site-packages/torch/backends/__init__.py:46: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
+  self.setter(val)
+Traceback (most recent call last):
+  File "/afs/cs.wisc.edu/u/a/p/apurvaashok/foundational_model/nanoGPT/sample.py", line 38, in <module>
+    checkpoint = torch.load(ckpt_path, map_location=device)
+  File "/afs/cs.wisc.edu/u/a/p/apurvaashok/foundational_model/nanoGPT/nanoGPT_venv/lib/python3.10/site-packages/torch/serialization.py", line 1484, in load
+    with _open_file_like(f, "rb") as opened_file:
+  File "/afs/cs.wisc.edu/u/a/p/apurvaashok/foundational_model/nanoGPT/nanoGPT_venv/lib/python3.10/site-packages/torch/serialization.py", line 759, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/afs/cs.wisc.edu/u/a/p/apurvaashok/foundational_model/nanoGPT/nanoGPT_venv/lib/python3.10/site-packages/torch/serialization.py", line 740, in __init__
+    super().__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: 'out/taylor_swift_finetune/taylor_swift_finetune_446319/ckpt.pt'
+>>> Evaluating metrics...
+Traceback (most recent call last):
+  File "/afs/cs.wisc.edu/u/a/p/apurvaashok/foundational_model/nanoGPT/custom_data_eval.py", line 74, in <module>
+    kl_value = compute_kl(args.train, args.gen, n=args.n)
+  File "/afs/cs.wisc.edu/u/a/p/apurvaashok/foundational_model/nanoGPT/custom_data_eval.py", line 37, in compute_kl
+    Q = align_probs(gen_counts, all_keys)
+  File "/afs/cs.wisc.edu/u/a/p/apurvaashok/foundational_model/nanoGPT/custom_data_eval.py", line 18, in align_probs
+    return np.array([counts.get(k, 0) / total for k in all_keys])
+  File "/afs/cs.wisc.edu/u/a/p/apurvaashok/foundational_model/nanoGPT/custom_data_eval.py", line 18, in <listcomp>
+    return np.array([counts.get(k, 0) / total for k in all_keys])
+ZeroDivisionError: division by zero
+Completed run for dataset size: 446319
+Timestamp: Tue Oct 21 11:31:09 PM CDT 2025
+==============================================
